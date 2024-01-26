@@ -27,6 +27,11 @@
 									"key": "session",
 									"value": "246cdc00-05f1-1e7a-8f12-98798sd98fdsf",
 									"type": "text"
+								},
+								{
+									"key": "period",
+									"value": 60,
+									"type": "integer"
 								}
 							]
 						},
