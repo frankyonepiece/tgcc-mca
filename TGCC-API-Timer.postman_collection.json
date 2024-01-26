@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "160c04b2-6a43-42e5-a97d-74729cecdad8",
+		"name": "Timer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6139182"
+	},
+	"item": [
+		{
+			"name": "Timer Api",
+			"item": [
+				{
+					"name": "Play",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "session",
+									"value": "246cdc00-05f1-1e7a-8f12-98798sd98fdsf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://192.168.1.48:8000/api/v1/timer/status/play",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"48"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"timer",
+								"status",
+								"play"
+							]
+						},
+						"description": "`{ 'success': true, 'message': \"Challange on play\" ]`\n\nError:\n\n`{\"message\":\"The session field is required.\",\"errors\":{\"session\":[\"The session field is required.\"]}}`"
+					},
+					"response": []
+				},
+				{
+					"name": "Pause",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "session",
+									"value": "246cdc00-05f1-1e7a-8f12-98798sd98fdsf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://192.168.1.48:8000/api/v1/timer/status/pause",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"48"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"timer",
+								"status",
+								"pause"
+							]
+						},
+						"description": "`{ 'success': true, 'message': \"Challange on pause\" ]`\n\nError:\n\n`{\"message\":\"The session field is required.\",\"errors\":{\"session\":[\"The session field is required.\"]}}`"
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "session",
+									"value": "9874654-94654-488798-488798",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://192.168.1.48:8000/api/v1/timer/create",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"48"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"timer",
+								"create"
+							]
+						},
+						"description": "`{ 'success': true, 'message': \"Challange is created\" ]`\n\nError:\n\n`{\"message\":\"The session field is required.\",\"errors\":{\"session\":[\"The session field is required.\"]}}`"
+					},
+					"response": []
+				},
+				{
+					"name": "Update time",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "session",
+									"value": "246cdc00-05f1-1e7a-8f12-98798sd98fdsf",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "-4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://192.168.1.48:8000/api/v1/timer/time",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"48"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"timer",
+								"time"
+							]
+						},
+						"description": "`{ 'success': true, 'message': \"Challange updated\" ]`\n\nError:\n\n`{\"message\":\"The session field is required.\",\"errors\":{\"session\":[\"The session field is required.\"]}}`"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "session",
+									"value": "246cdc00-05f1-1e7a-8f12-98798sd98fdsf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://192.168.1.48:8000/api/v1/timer/time",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"48"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"timer",
+								"time"
+							]
+						},
+						"description": "`{ 'success': true, 'message': \"Challange deleted\" ]`\n\nError:\n\n`{\"message\":\"The time field is required.\",\"errors\":{\"time\":[\"The time field is required.\"]}}`"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
